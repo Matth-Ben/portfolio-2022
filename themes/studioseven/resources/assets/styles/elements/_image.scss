@@ -1,0 +1,40 @@
+@use "../config" as *;
+
+.image {
+  &.parallax {
+    width: 250px;
+    height: 250px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &.lazy {
+      opacity: 0;
+      transition: opacity 0.4s $ease-out 0.2s;
+
+      &.loaded { opacity: 1; }
+    }
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+
+    &:not(.wp-block-image) {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.wp-block-image {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,275 @@
+# Translation of Plugins - Event Tracking for Gravity Forms - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Event Tracking for Gravity Forms - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-10-18 09:41:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Event Tracking for Gravity Forms - Stable (latest release)\n"
+
+#: includes/GFGAET_UA.php:151
+msgid "Turn on Interactive Hits"
+msgstr "Activer les occurrences interactives"
+
+#: includes/GFGAET_UA.php:157
+msgid "Turn off Interactive Hits"
+msgstr "Désactiver les occurrences interactives"
+
+#: includes/GFGAET_UA.php:144
+msgid "Non-interactive hits"
+msgstr "Occurrences non interactives"
+
+#: includes/GFGAET_Pagination_Settings.php:119
+msgid "Pagination Value"
+msgstr "Valeur de pagination"
+
+#: includes/GFGAET_Pagination_Settings.php:110
+msgid "Pagination Label"
+msgstr "Libellé de pagination"
+
+#: includes/GFGAET_Pagination_Settings.php:101
+msgid "Pagination Action"
+msgstr "Action de pagination"
+
+#: includes/GFGAET_Pagination_Settings.php:92
+msgid "Pagination Category"
+msgstr "Catégorie de pagination"
+
+#: includes/GFGAET_Pagination_Settings.php:83
+msgid "{form_title}::{source_page_number}::{current_page_number}"
+msgstr "{form_title}::{source_page_number}::{current_page_number}"
+
+#: includes/GFGAET_Pagination_Settings.php:79
+msgid "If left blank, the following values are used:"
+msgstr "Si laissé vide, les valeurs suivantes sont utilisées :"
+
+#: includes/GFGAET_Pagination_Settings.php:68
+#: includes/GFGAET_Pagination_Settings.php:86
+#: includes/GFGAET_Pagination_Settings.php:95
+#: includes/GFGAET_Pagination_Settings.php:104
+#: includes/GFGAET_Pagination_Settings.php:113
+msgid "Pagination Event Tracking"
+msgstr "Suivi des évènements de pagination"
+
+#: includes/GFGAET_Partial_Entries.php:255
+msgid "Event value (Integers only) which you would like to send to Google Analytics using Partial Entries. Merge tags are not allowed. If left blank, the form value will be used assuming it is an integer."
+msgstr "Valeur d’évènement (entiers uniquement) que vous souhaitez envoyer à Google Analytics à l’aide d’entrées partielles. Les balises de fusion ne sont pas autorisées. Si laissé vide, la valeur du formulaire sera utilisée en supposant qu’il s’agit d’un entier."
+
+#: includes/GFGAET_Partial_Entries.php:254
+msgid "Event label which you would like to send to Google Analytics using Partial Entries. Merge tags are not allowed. If left blank, the form value will be used."
+msgstr "Libellé d’évènement que vous souhaitez envoyer à Google Analytics à l’aide d’entrées partielles. Les balises de fusion ne sont pas autorisées. Si laissé vide, la valeur du formulaire sera utilisée."
+
+#: includes/GFGAET_Partial_Entries.php:253
+msgid "Event action which you would like to send to Google Analytics using Partial Entries. Merge tags are not allowed."
+msgstr "Action d’évènement que vous souhaitez envoyer à Google Analytics à l’aide d’entrées partielles. Les balises de fusion ne sont pas autorisées."
+
+#: includes/GFGAET_Partial_Entries.php:252
+msgid "Event category which you would like to send to Google Analytics using Partial Entries. Merge tags are not allowed."
+msgstr "Catégorie d’évènement que vous souhaitez envoyer à Google Analytics à l’aide d’entrées partielles. Les balises de fusion ne sont pas autorisées."
+
+#: includes/GFGAET_Submission_Feeds.php:1103
+msgid "Enter your Google Analytics event value. Leave blank to omit pushing a value to Google Analytics. Or to use the purchase value of a payment based form. <strong>Note:</strong> This must be a number (int). Floating numbers (e.g., 20.95) will be rounded up (e.g., 30)"
+msgstr "Saisissez la valeur de votre évènement Google Analytics. Laissez vide pour omettre d'ajouter une valeur à Google Analytics. Ou pour utiliser la valeur d’achat d'un formulaire de paiement. <strong>Notification :</strong> ce doit être un nombre (int). Les nombres flottants (ex : 20,95) seront arrondis à l'unité supérieure (ex : 30)."
+
+#: includes/GFGAET_UA.php:310
+msgid "Site ID"
+msgstr "ID du site"
+
+#: includes/GFGAET_UA.php:331
+msgid "Tracking HTTP API (Default)"
+msgstr "Suivi de l’API HTTP (par défaut)"
+
+#: includes/GFGAET_UA.php:330
+msgid "Events will be sent using the <a target=\"_blank\" href=\"https://developer.matomo.org/api-reference/tracking-api\">Tracking HTTP API</a>."
+msgstr "Les évènements seront envoyés en utilisant la commande <a target=\"_blank\" href=\"https://developer.matomo.org/api-reference/tracking-api\">API HTTP de suivi</a>."
+
+#: includes/GFGAET_UA.php:325
+msgid "JavaScript `trackEvent` Function (Ajax only)"
+msgstr "Fonction JavaScript `trackEvent' (Ajax uniquement)"
+
+#: includes/GFGAET_UA.php:324
+msgid "Forms must be Ajax only. Events will be sent using the <a target=\"_blank\" href=\"https://matomo.org/docs/event-tracking/#javascript-trackevent\">`trackEvent` JavaScript function</a>."
+msgstr "Les formulaires doivent être en Ajax uniquement. Les évènements seront envoyés en utilisant la fonction <a target=\"_blank\" href=\"https://matomo.org/docs/event-tracking/#javascript-trackevent\">JavaScript `trackEvent` </a>."
+
+#: includes/GFGAET_UA.php:64
+msgid "Google Analytics and Google Tag Manager"
+msgstr "Google Analytics et Google Tag Manager"
+
+#: includes/GFGAET_UA.php:302
+msgid "Matomo URL"
+msgstr "URL Matomo"
+
+#: includes/GFGAET_UA.php:301
+msgid "Enter your Matomo (formerly Piwik) URL. This is the same URL you use to access your Matomo instance (ex. http://www.example.com/matomo/.)"
+msgstr "Saisissez votre URL Matomo (anciennement Piwik). C’est la même URL que vous utilisez pour accéder à votre instance Matomo (ex. http://www.example.com/matomo/)."
+
+#: includes/GFGAET_Submission_Feeds.php:1074
+msgid "Google Analytics UA Code (Optional)"
+msgstr "Code UA Google Analytics (facultatif)"
+
+#: includes/GFGAET_UA.php:340
+msgid "This will make all your forms Ajax only for options that require it."
+msgstr "Cela rendra tous vos formulaires Ajax uniquement pour les options qui l’exigent."
+
+#: includes/GFGAET_UA.php:309
+msgid "Enter your Site ID (ex. 2 or J2O1NDvxzmMB if using the Protect Track ID plugin.)"
+msgstr "Saisissez votre ID de site (ex : 2 ou J2O1NDvxzmMB si vous utilisez l’extension Protect Track ID)."
+
+#. Plugin Name of the plugin
+msgid "Gravity Forms Event Tracking"
+msgstr "Gravity Forms Event Tracking"
+
+#: includes/GFGAET_UA.php:357
+msgid "Default"
+msgstr "Par défaut"
+
+#: includes/GFGAET_UA.php:351
+msgid "Ajax only"
+msgstr "Ajax uniquement"
+
+#: includes/GFGAET_UA.php:76
+msgid "Measurement Protocol (Default)"
+msgstr "Protocole de mesure (par défaut)"
+
+#: includes/GFGAET_UA.php:65
+msgid "By default, events are sent using the measurement protocol. You can change to using pure Google Analytics and Google Tag Manager if your forms are Ajax only."
+msgstr "Par défaut, les évènements sont envoyés en utilisant le protocole de mesure. Vous pouvez changer pour utiliser Google Analytics et Google Tag Manager si vos formulaires sont Ajax uniquement."
+
+#: includes/GFGAET_UA.php:339
+msgid "Advanced"
+msgstr "Avancé"
+
+#: includes/GFGAET_Submission_Feeds.php:981
+msgid "You don't have sufficient permissions to update the form settings."
+msgstr "Vous n’avez pas les droits suffisants pour mettre à jour ces réglages."
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/gravity-forms-google-analytics-event-tracking/"
+msgstr "https://wordpress.org/plugins/gravity-forms-google-analytics-event-tracking/"
+
+#. Author of the plugin
+msgid "Ronald Huereca"
+msgstr "Ronald Huereca"
+
+#. Author URI of the plugin
+msgid "https://mediaron.com"
+msgstr "https://mediaron.com"
+
+#: includes/GFGAET_Pagination_Settings.php:84
+#: includes/GFGAET_Submission_Feeds.php:1152
+msgid "Value"
+msgstr "Valeur"
+
+#: includes/GFGAET_Pagination_Settings.php:82
+#: includes/GFGAET_Submission_Feeds.php:1151
+msgid "Label"
+msgstr "Libellé"
+
+#: includes/GFGAET_Pagination_Settings.php:81
+#: includes/GFGAET_Submission_Feeds.php:1150
+msgid "Action"
+msgstr "Action"
+
+#: includes/GFGAET_Pagination_Settings.php:80
+#: includes/GFGAET_Submission_Feeds.php:1149
+msgid "Category"
+msgstr "Catégorie"
+
+#: includes/GFGAET_Submission_Feeds.php:1108
+msgid "Other Settings"
+msgstr "Autres paramètres"
+
+#: includes/GFGAET_Submission_Feeds.php:1112
+#: includes/GFGAET_Submission_Feeds.php:1114
+msgid "Conditional Logic"
+msgstr "Logique conditionnelle"
+
+#: includes/GFGAET_Submission_Feeds.php:1082
+msgid "Enter your Google Analytics event category"
+msgstr "Saisissez votre catégorie d’évènement Google Analytics"
+
+#: includes/GFGAET_Partial_Entries.php:327
+#: includes/GFGAET_Submission_Feeds.php:1085
+#: includes/GFGAET_Submission_Feeds.php:1089
+#: includes/GFGAET_Submission_Feeds.php:1133
+msgid "Event Action"
+msgstr "Action d’évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1089
+msgid "Enter your Google Analytics event action"
+msgstr "Saisissez votre action d’évènement Google Analytics"
+
+#: includes/GFGAET_Partial_Entries.php:334
+#: includes/GFGAET_Submission_Feeds.php:1092
+#: includes/GFGAET_Submission_Feeds.php:1096
+#: includes/GFGAET_Submission_Feeds.php:1134
+msgid "Event Label"
+msgstr "Label d’évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1096
+msgid "Enter your Google Analytics event label"
+msgstr "Saisissez votre label d’évènement Google Analytics "
+
+#: includes/GFGAET_Partial_Entries.php:341
+#: includes/GFGAET_Submission_Feeds.php:1099
+#: includes/GFGAET_Submission_Feeds.php:1103
+#: includes/GFGAET_Submission_Feeds.php:1135
+msgid "Event Value"
+msgstr "Valeur d’évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1114
+msgid "When conditions are enabled, events will only be sent to google when the conditions are met. When disabled, all form submissions will trigger an event."
+msgstr "Quand les conditions sont activées, les évènements seront seulement envoyés à Google quand les conditions sont remplies. Si désactivées, tous les envois de formulaire déclencheront un évènement."
+
+#: includes/GFGAET_Submission_Feeds.php:1130
+msgid "If you leave these blank, the following defaults will be used when the event is tracked"
+msgstr "Si vous laissez ceci vide, les réglages suivants par défaut seront utilisés quand l’évènement est suivi."
+
+#: includes/GFGAET_Submission_Feeds.php:1148
+msgid "Name"
+msgstr "Nom"
+
+#: includes/GFGAET_Partial_Entries.php:320
+#: includes/GFGAET_Submission_Feeds.php:1078
+#: includes/GFGAET_Submission_Feeds.php:1082
+#: includes/GFGAET_Submission_Feeds.php:1132
+msgid "Event Category"
+msgstr "Catégorie de l'évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1057
+msgid "Enter a feed name to uniquely identify this setup."
+msgstr "Saisissez un nom de flux pour identifier de manière unique cette configuration"
+
+#: includes/GFGAET_Submission_Feeds.php:970
+#: includes/GFGAET_Submission_Feeds.php:1062
+msgid "Event Tracking Settings"
+msgstr "Réglages de suivi d’évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1070
+msgid "Event UA Code"
+msgstr "Code UA d’évènement"
+
+#: includes/GFGAET_Submission_Feeds.php:1074
+msgid "Leave empty to use global GA Code. You can enter multiple UA codes as long as they are comma separated."
+msgstr "Laissez vide pour utiliser un code GA global. Vous pouvez saisir plusieurs codes UA tant qu’ils sont séparés par des virgules."
+
+#: includes/GFGAET_Submission_Feeds.php:1049
+msgid "Feed Settings"
+msgstr "Paramétres de flux"
+
+#: includes/GFGAET_Submission_Feeds.php:1052
+#: includes/GFGAET_Submission_Feeds.php:1057
+msgid "Feed Name"
+msgstr "Nom du flux"
+
+#: includes/GFGAET_UA.php:104
+msgid "Enter your UA code (UA-XXXX-Y) Find it <a href=\"https://support.google.com/analytics/answer/1032385\" target=\"_blank\">using this guide</a>."
+msgstr "Saisissez votre code UA (UA-XXXX-Y). Trouvez le <a href=\"https://support.google.com/analytics/answer/1032385\" target=\"_blank\">avec ce guide</a>."
+
+#: includes/GFGAET_UA.php:105
+msgid "UA Tracking ID"
+msgstr "ID UA de suiva"

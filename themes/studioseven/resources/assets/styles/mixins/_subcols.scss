@@ -1,0 +1,23 @@
+@use "../config/breakpoints" as *;
+
+@function subcol($parent-nb, $col-nb) {
+  $guttersWidth: ($parent-nb - 1) * $gutter-size;
+  $gutter-nb: 0;
+
+  @if ($col-nb > 1) {
+    $gutter-nb: $col-nb - 1;
+  }
+
+  @return calc((100% - #{$guttersWidth}) / #{$parent-nb} * #{$col-nb} + (#{$gutter-size} * #{$gutter-nb}));
+}
+
+@function submargin($parent-nb, $col-nb, $first: false) {
+  $guttersWidth: ($parent-nb - 1) * $gutter-size;
+  $endGutter: 0;
+
+  @if $first == false {
+    $endGutter: 1;
+  }
+
+  @return calc((100% - #{$guttersWidth}) / #{$parent-nb} * #{$col-nb} + (#{$gutter-size} * (#{$col-nb} + #{$endGutter} )));
+}

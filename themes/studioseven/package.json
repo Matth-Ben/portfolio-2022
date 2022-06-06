@@ -1,0 +1,99 @@
+{
+  "name": "sage",
+  "version": "9.0.9",
+  "author": "Roots <team@roots.io>",
+  "homepage": "https://roots.io/sage/",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roots/sage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roots/sage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "android 4",
+    "opera 12"
+  ],
+  "scripts": {
+    "build": "webpack --progress --config resources/assets/build/webpack.prod.js",
+    "build:production": "webpack --env production --progress --config resources/assets/build/webpack.prod.js && yarn purge",
+    "build:profile": "webpack --progress --profile --json --config resources/assets/build/webpack.prod.js",
+    "start": "webpack --watch --config resources/assets/build/webpack.dev.js",
+    "rmdist": "rimraf dist",
+    "lint": "npm run -s lint:scripts && npm run -s lint:styles",
+    "lint:scripts": "eslint resources/assets/scripts resources/assets/build",
+    "lint:styles": "stylelint \"resources/assets/styles/**/*.{css,sass,scss,sss,less}\"",
+    "test": "npm run -s lint",
+    "favicon": "node favicons.js",
+    "deploy:preprod": "branch=$npm_config_PREPROD_BRANCH user=$npm_config_PREPROD_FTP_USERNAME pwd=$npm_config_PREPROD_FTP_PSSWRD host=$npm_config_PREPROD_FTP_ADDRESS dir=$npm_config_PREPROD_FTP_DIR ./deploy.sh",
+    "deploy:prod": "branch=$npm_config_PROD_BRANCH user=$npm_config_PROD_FTP_USERNAME pwd=$npm_config_PROD_FTP_PSSWRD host=$npm_config_PROD_FTP_ADDRESS dir=$npm_config_PROD_FTP_DIR ./deploy.sh",
+    "purge": "purgecss --css dist/styles/bootstrap.css --content resources/views/*.blade.php resources/views/**/*.blade.php resources/views/**/**/*.blade.php --out dist/styles/"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "devDependencies": {
+    "@squoosh/lib": "^0.4.0",
+    "autoprefixer": "~8.2.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "buble": "^0.20.0",
+    "buble-loader": "^0.5.1",
+    "cache-loader": "~1.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^0.28.9",
+    "cssnano": "~4.0.5",
+    "depcheck": "^1.4.3",
+    "eslint": "^8.6.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-webpack-plugin": "^3.1.1",
+    "favicons": "^7.0.0-beta.4",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "image-minimizer-webpack-plugin": "^3.2.3",
+    "imagemin-mozjpeg": "~7.0.0",
+    "imagemin-webpack-plugin": "~2.2.0",
+    "mini-css-extract-plugin": "^2.5.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-safe-parser": "~3.0",
+    "purgecss-webpack-plugin": "0.23.0",
+    "rimraf": "~2.6",
+    "sass": "^1.48.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^0.22.1",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "~18.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "terser-webpack-plugin": "^5.3.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.66.0",
+    "webpack-assets-manifest": "^1.0.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-middleware": "^5.3.0",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-merge": "^5.8.0",
+    "yargs": "~11.0.0"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "bowser": "^2.11.0",
+    "gsap": "^3.9.1",
+    "intersection-observer": "^0.12.0",
+    "locomotive-scroll": "^4.1.1",
+    "quicklink": "^2.2.0",
+    "throttle-debounce": "^3.0.1",
+    "vanilla-lazyload": "^17.4.0",
+    "whatwg-fetch": "^3.6.2"
+  }
+}

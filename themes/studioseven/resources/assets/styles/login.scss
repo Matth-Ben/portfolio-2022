@@ -1,0 +1,66 @@
+@import "config/font.scss";
+
+$primary: #2e2e2e;
+$secondary: #bda67f;
+
+.login {
+  background: $primary;
+  font-family: "Arial", sans-serif;
+
+  #nav a,
+  #backtoblog a {
+    color: white;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .message {
+    box-shadow: none;
+    border: 1px solid $primary;
+    border-left-width: 4px;
+    color: black;
+  }
+
+  #user_pass button {
+    color: black;
+  }
+
+  #loginform {
+    box-shadow: none;
+    border: 1px solid $primary;
+    color: black;
+    padding: 25px;
+
+    input {
+      border-color: $primary;
+      border-radius: 0;
+    }
+
+    .submit input {
+      margin-top: 10px;
+      background-color: $primary;
+      border-color: $primary;
+      text-transform: uppercase;
+      transition:
+        color 0.2s ease-out,
+        background-color 0.2s ease-out;
+
+      &:hover {
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+
+  h1 a {
+    width: 150px;
+    // background-image: url("../images/svg/logo.svg");
+    background-size: 150px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

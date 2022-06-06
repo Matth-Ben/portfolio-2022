@@ -1,0 +1,132 @@
+$textFont: "Arial", sans-serif;
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: $textFont;
+    margin-right: 10px;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition:
+      opacity 0.75s $ease-out,
+      transform 0.75s $ease-out;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $black;
+      transition: fill 0.4s $ease-out;
+    }
+
+    &:hover {
+      svg {
+        fill: $black;
+      }
+    }
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        transition-delay: 0.05s * $i;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .social-media__item {
+      margin: 0 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      svg {
+        transition:
+          transform 0.4s $ease-out,
+          fill 0.4s $ease-out;
+      }
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+        }
+
+        &.twitter {
+          svg {
+            fill: #1da1f2;
+          }
+        }
+
+        &.facebook {
+          svg {
+            fill: #3b5998;
+          }
+        }
+
+        &.linkedin {
+          svg {
+            fill: #2867b2;
+          }
+        }
+      }
+
+      &.copy {
+        textarea {
+          width: 0;
+          height: 0;
+          padding: 0;
+          opacity: 0;
+        }
+
+        .msg {
+          font-family: $textFont;
+          color: $black;
+          font-size: 13px;
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.75s $ease-out;
+
+          &.visible {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &.show .social-media__item {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+}

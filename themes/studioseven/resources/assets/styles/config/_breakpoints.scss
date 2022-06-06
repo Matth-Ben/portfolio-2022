@@ -1,0 +1,52 @@
+$grid-columns: 24;
+$grid-gutter-width: 10;
+$gutter-size: $grid-gutter-width * 1px;
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 320px,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+);
+
+$container-max-widths: (
+  xs: 300px,
+  sm: 420px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px,
+  xxxl: 1550px,
+);
+
+@mixin media-breakpoint-up($breakpoint, $breakpoints: $grid-breakpoints) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint: map-get($breakpoints, $breakpoint);
+  }
+
+  @else {
+    @error "Unknown breakpoint #{$breakpoint}.";
+  }
+
+  @media screen and (min-width: #{$breakpoint}) {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint, $breakpoints: $grid-breakpoints) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint: map-get($breakpoints, $breakpoint);
+  }
+
+  @else {
+    @error "Unknown breakpoint #{$breakpoint}.";
+  }
+
+  @media screen and (max-width: calc(#{$breakpoint} - 0.02px)) {
+    @content;
+  }
+}

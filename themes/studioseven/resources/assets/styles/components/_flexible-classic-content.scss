@@ -1,0 +1,7 @@
+@use "../config" as *;
+
+.f-classic-content {
+  margin: 10px 0;
+
+  @include media-breakpoint-up(xl) { margin: 0; }
+}

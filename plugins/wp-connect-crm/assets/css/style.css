@@ -1,0 +1,12 @@
+.ctcrm__body div {
+  margin: 5px auto;
+}
+
+.ctcrm__body div.ctcrm__form-id {
+  display: none;
+}
+
+.ctcrm__body div label {
+  display: inline-block;
+  width: 250px;
+}

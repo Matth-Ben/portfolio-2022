@@ -1,0 +1,137 @@
+@use "../config" as *;
+@use "../bootstrap" as *;
+
+$form-font: $font-default;
+$font-color: $black;
+
+// There's 2 predefined classes that you can use on form fields to build your form
+// By default a field is displayed fullwidth with a label
+// .half - Add this class to make a field half width
+// .no-label - Add this class to hide the label of a field (only the placeholder is shown)
+
+input[type="submit"] { appearance: none; }
+
+.gform_confirmation_wrapper {
+  .gform_confirmation_message {
+    color: $font-color;
+    font-family: $form-font;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+
+form {
+  .validation_error {
+    border: 0;
+    color: $danger;
+    font-family: $form-font;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .gform_body {
+    .gform_fields {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      padding: 0;
+
+      .gfield {
+        position: relative;
+        width: 100%;
+        list-style-type: none;
+        margin: 0 0 15px;
+        padding: 0 10px;
+
+        @include media-breakpoint-up(md) { margin: 0 0 30px; }
+
+        label {
+          width: 100%;
+          color: $font-color;
+          line-height: 19px;
+          font-size: 16px;
+          font-family: $form-font;
+          font-weight: normal;
+        }
+
+        .ginput_container {
+          margin: 0;
+
+          input,
+          textarea,
+          select {
+            width: 100%;
+            padding: 20px 0;
+            border: 0;
+            border-bottom: 1px solid $font-color;
+            border-radius: 0;
+            outline: none;
+            color: $font-color;
+            line-height: 19px;
+            font-size: 16px;
+            font-family: $form-font;
+
+            &::placeholder {
+              font-family: $form-font;
+              font-size: 16px;
+              line-height: 19px;
+              color: $font-color;
+            }
+          }
+
+          select {
+            option { color: $black; }
+          }
+        }
+
+        &_error {
+          border: 0;
+          background-color: transparent;
+
+          .ginput_container {
+            input,
+            textarea,
+            select {
+              border: 1px solid $danger;
+              padding: 20px 20px 20px 20px;
+            }
+          }
+
+          .validation_message {
+            font-family: $form-font;
+            font-size: 12px;
+            color: $danger;
+          }
+        }
+
+        &.half {
+          width: 100%;
+
+          @include media-breakpoint-up(md) { width: 50%; }
+        }
+
+        &.no-label .gfield_label,
+        &_visibility_hidden { display: none; }
+      }
+    }
+  }
+
+  .gform_footer {
+    padding: 0;
+    margin-top: 20px;
+
+    .gform_button {
+      padding: 15px;
+      border: 1px solid $font-color;
+      border-radius: 0;
+      background-color: $white;
+      line-height: 19px;
+      font-size: 16px;
+      font-family: $form-font;
+      color: $font-color;
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+    }
+  }
+}

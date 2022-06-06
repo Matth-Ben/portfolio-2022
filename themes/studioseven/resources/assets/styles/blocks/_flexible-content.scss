@@ -1,0 +1,7 @@
+@use "../config" as *;
+
+.b-flexible-content {
+  margin: 40px 0;
+
+  @include media-breakpoint-up(md) { margin: 60px 0; }
+}

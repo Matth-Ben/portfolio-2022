@@ -1,0 +1,32 @@
+
+@use "../config" as *;
+
+body {
+  font-family: $font-default;
+  overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+[data-router-view] { min-height: 100vh; }
+
+.b-gutenberg {
+  &:first-child {
+    margin-top: 30px;
+
+    @include media-breakpoint-up(md) { margin-top: 60px; }
+
+    @include media-breakpoint-up(xl) { margin-top: 150px; }
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) { margin-bottom: 60px; }
+
+    @include media-breakpoint-up(xl) { margin-bottom: 150px; }
+  }
+}

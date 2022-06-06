@@ -1,0 +1,21 @@
+@use "../config" as *;
+
+.grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+
+  &__item {
+    transition: opacity 0.5s $ease-out;
+    opacity: 0;
+    background-color: $danger;
+  }
+
+  &.g {
+    .grid__item { opacity: 0.3; }
+  }
+}
