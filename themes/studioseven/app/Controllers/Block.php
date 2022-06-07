@@ -35,5 +35,14 @@ class Block extends Controller {
       ];
   }
 
+  public static function content($data) {
+    return [
+      'image' => Element::image($data['b-content__image'], '1920px'),
+      'suptitle' => $data['b-content__suptitle'],
+      'title' => $data['b-content__title'],
+      'hn' => $data['b-content__hn']
+    ];
+  }
+
   // generated function here
 }

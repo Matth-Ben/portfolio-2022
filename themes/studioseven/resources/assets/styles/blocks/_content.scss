@@ -1,0 +1,35 @@
+@use "../config" as *;
+
+.b-content {
+  .container-fluid {
+    padding: 0;
+
+    .row { margin: auto; }
+  }
+
+  &__body {
+    width: 100%;
+    padding: 0 $column-width;
+
+    &-suptitle {
+      margin: 5em auto 2em;
+      text-transform: uppercase;
+
+      @include f11;
+    }
+
+    &-title {
+      max-width: 12em;
+
+      @include f30;
+
+      h2 { font-weight: 500; }
+    }
+  }
+
+  &__image {
+    margin-top: 10vh;
+
+    @include media-breakpoint-up(md) { margin-top: 40vh; }
+  }
+}
