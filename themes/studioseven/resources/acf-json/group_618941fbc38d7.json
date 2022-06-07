@@ -3,25 +3,6 @@
     "title": "[ELEMENT] – TITLES",
     "fields": [
         {
-            "key": "field_61894202da38b",
-            "label": "Sur-titre",
-            "name": "suptitle",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_6189420dda38c",
             "label": "Titre",
             "name": "title",
@@ -66,6 +47,25 @@
             "return_format": "value",
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_61894202da38b",
+            "label": "Sous titre",
+            "name": "suptitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -85,6 +85,6 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "show_in_rest": false,
-    "modified": 1646044103
+    "show_in_rest": 0,
+    "modified": 1654622057
 }

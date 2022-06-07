@@ -28,6 +28,11 @@
   font-size: 1.35em;
 }
 
+@mixin f11 {
+  line-height: 1.2;
+  font-size: 1.15em;
+}
+
 @mixin f09 {
   line-height: 1.3;
   font-size: 0.9em;
