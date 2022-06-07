@@ -1,5 +1,17 @@
 @use "../config" as *;
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  color: $white;
+  font-size: 12.5px;
   z-index: $z-header;
+
+  &__sitename {
+    color: $white;
+    font-size: 16px;
+  }
 }
