@@ -11,6 +11,6 @@
   $data = Block::cover($block['data']);
 @endphp
 
-<div class="b-cover">
+<div class="b-cover" data-scroll-section>
   <div class="b-cover__title">@include('elements/title', ['data' => $data['title']])</div>
 </div>

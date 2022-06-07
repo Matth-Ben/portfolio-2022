@@ -11,6 +11,10 @@ const blockList = [
     fileName: 'Video'
   },
   {
+    name: 'b-cover',
+    fileName: 'Cover'
+  },
+  {
     name: 'instafeed',
     fileName: 'InstaFeed'
   }/* generated class */

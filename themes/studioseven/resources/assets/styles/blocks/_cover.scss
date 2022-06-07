@@ -11,7 +11,26 @@
     color: $white;
 
     .e-title {
+      font-weight: 300;
+
       @include f44;
+
+      span {
+        display: block;
+
+        &:first-child { text-indent: 1.25em; }
+        &:nth-child(2) { text-indent: 0.5em; }
+        &:last-child { text-indent: 1em; }
+      }
+    }
+
+    .e-suptitle {
+      position: absolute;
+      right: 5em;
+      bottom: 5em;
+      width: 15em;
+
+      @include f11;
     }
   }
 }
