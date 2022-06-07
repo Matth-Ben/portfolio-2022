@@ -1,9 +1,11 @@
 /* COLORS */
-$white: #fff;
-$black: #000;
+$white: #d7d4f1;
+$black: #1c2729;
 $warning: #e6662a;
 $success: #0eb31f;
 $danger: #e6214b;
+
+$primary: #6768ab;
 
 /* FONTS */
 $font-default: "Arial", sans-serif;
@@ -21,3 +23,5 @@ $z-header: 15;
 /* BROWSERS TEST */
 $is-safari: "(background: -webkit-named-image(i))";
 $is-firefox: "(-moz-appearance:none)";
+
+$column-width: 4.16666vw;

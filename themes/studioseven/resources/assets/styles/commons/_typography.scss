@@ -1,6 +1,17 @@
-// body {}
-// h1 {}
-// h2 {}
+@use "../config" as *;
+
+body {
+  @include f09;
+}
+
+h1 {
+  @include f38;
+}
+
+h2 {
+  @include f30;
+}
+
 // h3 {}
 // h4 {}
 // h5 {}
