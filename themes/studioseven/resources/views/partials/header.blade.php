@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" data-scroll-section>
   <div class="container-fluid">
     <div class="row justify-content-between">
       <div class="col">

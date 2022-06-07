@@ -10,7 +10,6 @@ import { listen } from 'quicklink'
 import Loader from './util/Loader'
 import Menu from './util/Menu'
 import store from './util/store'
-import DOMObserver from './util/DOMObserver'
 import locomotiveScroll from 'locomotive-scroll'
 
 // Routes
@@ -60,7 +59,7 @@ export default class App {
   * @returns {void}
   */
   start() {
-    App.globalData.smoothScroll ? this.initSmoothScroll() : this.initDOMObserver()
+    this.initSmoothScroll()
 
     this.loader = new Loader()
     this.menu = new Menu()
@@ -81,10 +80,6 @@ export default class App {
         this.checkAnchor()
       })
     })
-  }
-
-  initDOMObserver() {
-    this.DOMObserver = new DOMObserver(this.observerCallBack)
   }
 
   initSmoothScroll() {
@@ -181,11 +176,6 @@ export default class App {
 
       this.checkAnchor(location)
       listen({ el: to.view })
-
-      if (!App.globalData.smoothScroll) {
-        this.DOMObserver = null
-        this.initDOMObserver()
-      }
 
       this.detachAdminBarLinks(to)
     })

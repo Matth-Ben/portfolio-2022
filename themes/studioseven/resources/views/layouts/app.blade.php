@@ -8,7 +8,7 @@
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ get_field('google_tag_manager', 'options') }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     @endif
 
-    <div class="app">
+    <div class="app js-scroll">
       @php do_action('get_header') @endphp
 
       @include('partials.header')
