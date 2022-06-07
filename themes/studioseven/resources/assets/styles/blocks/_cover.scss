@@ -13,10 +13,10 @@
     .e-title {
       font-weight: 300;
 
-      @include f44;
-
       span {
         display: block;
+
+        @include f44;
 
         &:first-child { text-indent: 1.25em; }
         &:nth-child(2) { text-indent: 0.5em; }
