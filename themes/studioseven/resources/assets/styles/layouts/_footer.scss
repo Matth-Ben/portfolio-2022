@@ -1,23 +1,34 @@
+@use "../config" as *;
+
 .footer {
-  &__links {
-    &-credit {
-      position: relative;
-      display: inline-block;
-      padding-right: 30px;
+  padding: 8em $column-width 2em;
+  background: $black;
+  color: $white;
 
-      .link {
-        display: inline-block;
-        padding: 0 20px;
-      }
+  &__contact {
+    &-mail {
+      color: $white;
 
-      img {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        bottom: 50%;
-        transform: translateY(50%);
-      }
+      @include f15;
+    }
+  }
+
+  &__address {
+    p {
+      margin: 0;
+    }
+  }
+
+  &__separator {
+    margin: 3em auto;
+    padding: 0 $column-width;
+    border-color: $primary;
+  }
+
+  .ml-auto {
+    @include media-breakpoint-up(md) {
+      text-align: right;
+      margin-left: auto;
     }
   }
 }
