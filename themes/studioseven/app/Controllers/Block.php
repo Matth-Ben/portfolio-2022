@@ -29,5 +29,11 @@ class Block extends Controller {
     ];
   }
 
+  public static function cover($data) {
+      return [
+          'title' => Element::title($data)
+      ];
+  }
+
   // generated function here
 }

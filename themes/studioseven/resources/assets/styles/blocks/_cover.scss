@@ -1,0 +1,17 @@
+@use "../config" as *;
+
+.b-cover {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: $black;
+
+  &__title {
+    margin-left: $column-width;
+    color: $white;
+
+    .e-title {
+      @include f44;
+    }
+  }
+}
